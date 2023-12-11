@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/entrar.css">
+    <title>Document</title>
+    <script>
+       
+      function limpa_formulário_cep() {
+              //Limpa valores do formulário de cep.
+              document.getElementById('rua').value=("");
+              document.getElementById('bairro').value=("");
+              document.getElementById('cidade').value=("");
+              document.getElementById('uf').value=("");
+              document.getElementById('ibge').value=("");
+      }
+ 
+      function meu_callback(conteudo) {
+          if (!("erro" in conteudo)) {
+              //Atualiza os campos com os valores.
+              document.getElementById('rua').value=(conteudo.logradouro);
+              document.getElementById('bairro').value=(conteudo.bairro);
+              document.getElementById('cidade').value=(conteudo.localidade);
+              document.getElementById('uf').value=(conteudo.uf);
+              document.getElementById('ibge').value=(conteudo.ibge);
+          } //end if.
+          else {
+              //CEP não Encontrado.
+              limpa_formulário_cep();
+              alert("CEP não encontrado.");
+          }
+      }
+         
+      function pesquisacep(valor) {
+ 
+          //Nova variável "cep" somente com dígitos.
+          var cep = valor.replace(/\D/g, '');
+ 
+          //Verifica se campo cep possui valor informado.
+          if (cep != "") {
+ 
+              //Expressão regular para validar o CEP.
+              var validacep = /^[0-9]{8}$/;
+ 
+              //Valida o formato do CEP.
+              if(validacep.test(cep)) {
+ 
+                  //Preenche os campos com "..." enquanto consulta webservice.
+                  document.getElementById('rua').value="...";
+                  document.getElementById('bairro').value="...";
+                  document.getElementById('cidade').value="...";
+                  document.getElementById('uf').value="...";
+                  document.getElementById('ibge').value="...";
+ 
+                  //Cria um elemento javascript.
+                  var script = document.createElement('script');
+ 
+                  //Sincroniza com o callback.
+                  script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+ 
+                  //Insere script no documento e carrega o conteúdo.
+                  document.body.appendChild(script);
+ 
+              } //end if.
+              else {
+                  //cep é inválido.
+                  limpa_formulário_cep();
+                  alert("Formato de CEP inválido.");
+              }
+          } //end if.
+          else {
+              //cep sem valor, limpa formulário.
+              limpa_formulário_cep();
+          }
+      };
+ 
+      </script>
+</head>
+
+  
+<body>
+     <!--imagem home--> 
+     <div>
+        <div id="column1">
+        <a href="http://127.0.0.1:5500/Projeto/projeto.html" target="_blank">
+        <img class="img1" src="IMG/home (3).png"></a>
+        </div>
+        <div> 
+        <!--imagem icone--> 
+        <a href="http://127.0.0.1:5500/Projeto/ajuda.htmll" target="_blank">
+        <img class="img2" src="IMG/information-button.png"></a>   
+        </div>
+        </div>
+</div>
+
+  <div class="row align-items-center h-100 ">
+      <div class="col-8 col-md-3 col-xs-8 mx-auto l-form">
+
+       
+        <div class="videomostrar">
+        <video id="videoElement" width="80" height="80" autoplay></video>
+      </div> 
+      <div class="abrircamera">
+        <button onclick="startCamera()">Login por Camera</button>
+      </div>
+      <div class="fecharcamera">
+        <button onclick="stopCamera()">Fechar Login por Camera</button>
+      </div>
+      
+          <form>
+              <img class="imgperfil" src="IMG/user.png"  width="150">
+              <div class="form-group">
+                <div class="email">
+                <h3> Insira seu e-mail.</h3>
+            </div>
+                  <input type="text" name="email" placeholder="Email" class="form-control i-form1">
+              </div>
+              <div class="form-group">
+                <div class="email">
+                    <h3> Insira sua senha.</h3>
+                </div>
+                <img class="imgolho" src="IMG/eye.png"  width="150">
+                <input type="password" placeholder="Mínimo 8 caracteres" class="password" name="password"
+                       minlength="8" required>
+            </div>
+        
+              <div class="imglogin">
+                <a href="http://127.0.0.1:5500/Projeto/projeto.html" target="_blank">
+                 <img src="IMG/login.png" width="100px" height="80px">
+                </a>
+              </div>
+             
+          </form>
+          
+      </div>
+      
+  </div>
+
+ 
+
+  <script>
+      let videoStream;
+      async function startCamera(){
+          const videoElement = document.getElementById('videoElement');
+          try{
+              videoStream = await navigator.mediaDevices.getUserMedia({video : true});
+              videoElement.srcObject = videoStream;
+
+          }catch(error){
+              console.error('Erro ao abrir a camera', erro);
+              alert('Erro ao abrir a camera');
+          }
+      }
+      async function stopCamera(){
+          const videoElement = document.getElementById('videoElement');
+          if(videoStream){
+              const tracks = videoStream.getTracks();
+              tracks.forEach(track => track.stop());
+              videoElement.srcObject = null;           
+                  
+          
+          }
+          }
+      
+  </script>
+  <!-- Inicio do formulario -->
+  
+  <div class="formularioagencia">
+    <h3 class="textoagencia" style="color: white;">Vamos encontrar uma agência perto de você!</h3>
+  <form method="get" action=".">
+    <label style="color: white;">Cep:
+    <input name="cep" type="text" id="cep" value="" size="40" maxlength="9"
+           onblur="pesquisacep(this.value);" /></label><br />
+    <label style="color: white;">Rua:
+    <input name="rua" type="text" id="rua" size="40""/></label><br />
+    <label style="color: white;">Bairro:
+    <input name="bairro" type="text" id="bairro" size="38"/></label><br />
+    <label style="color: white;">Cidade:
+    <input name="cidade" type="text" id="cidade" size="37"/></label><br />
+    <label style="color: white;">Estado:
+    <input name="uf" type="text" id="uf" size="37"/></label><br />
+    <label style="color: white;">IBGE:
+    <input name="ibge" type="text" id="ibge" size="40" /></label><br />
+    <button style="background-color: white;">Encontrar Agência</button>
+  </div>
+  </form>
+
+    
+
+    <!--API do google maps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDROdqx-sb1-NoWGEe3seg-Cf5dgGI4oJs&callback=initMap"></script>
+
+
+</body>
+
+</html>

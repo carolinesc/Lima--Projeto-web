@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Kanit:wght@300&family=Space+Grotesk&display=swap');
+body{
+    height: 2000px;
+    font-family: 'Ysabeau', sans-serif;
+    background-color: #050A30;
+    }
+
+.cabeçalho{
+    color: #050a30;
+    background-color: #050A30;
+    border-bottom: 3px solid #050A30;
+    width: 110%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -8px;
+    margin-left: -7px;
+}
+#imghome{
+    margin-left: 60px;
+    margin-top: 4px;
+    width: 99px;
+    height: 99px;
+}
+
+#imgajudaa{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 120px;
+}
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 490px;
+  border-radius: 10px 20px;
+}
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+#imgcarrinho{
+  margin-left: 840px;
+  margin-top: 17px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+#imgbarrinhas{
+    margin-left: 1050px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+#linhahorizontal {
+    width: 1520px;
+    border: 3px solid#ffffff;
+    margin-top: 1px;
+    margin-left: -10px;
+}
+#imgmickey{
+  margin-left: 790px;
+  margin-top: 735px;
+  width: 710px;
+  height: 450px;
+  position: absolute;
+}
+.navio{
+    margin-top: 0px;
+    margin-left: -30px;
+ height: 550px;
+ width: 1700px;
+ position: absolute;
+ }
+ .texto1{
+  color: #ffffff;
+  font-size: 200%;
+  margin-left: 20px;
+  margin-top: 50px;
+  position: absolute;
+  font-family: 'Hind Siliguri', sans-serif;
+ }
+ .texto2{
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 110px;
+  position: absolute;
+  font-family: 'Hind Siliguri', sans-serif;
+ }
+
+#imganunciodisney{
+  margin-top: 550px;
+  position: absolute;
+  margin-left: -10px;
+}
+#imgmickey{
+  margin-left: 790px;
+  margin-top: 735px;
+  width: 710px;
+  height: 450px;
+  position: absolute;
+}
+.video{
+  margin-left: -15px;
+  margin-top: 610px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+ }
+ #linhahorizontaldps {
+    width: 1519px;
+    border: 3px solid#ffffff;
+    margin-top: 545px;
+    margin-left: -10px;
+    position: absolute;
+}
+#linhahorizontaltres{
+  width: 1519px;
+  border: 3px solid#ffffff;
+  margin-top: 1185px;
+  margin-left: -10px;
+  position: absolute;
+}
+#imganuncionorwegian{
+  margin-top: 1192px;
+  position: absolute;
+  margin-left: -10px;
+}
+#linhahorizontalduas{
+  width: 1519px;
+  border: 3px solid#ffffff;
+  margin-top: 730px;
+  margin-left: -10px;
+  position: absolute;
+}
+#linhahorizontalquatro{
+  width: 1519px;
+  border: 3px solid#ffffff;
+  margin-top: 1372px;
+  margin-left: -10px;
+  position: absolute;
+}
+.videon{
+  margin-left: -15px;
+  margin-top: 1255px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+ }
+ #imgnor{
+  margin-left: 790px;
+  margin-top: 1377px;
+  width: 710px;
+  height: 450px;
+  position: absolute;
+ }
+

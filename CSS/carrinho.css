@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Kanit:wght@300&family=Ysabeau:wght@900&display=swap');
+body{
+   font-family: 'Ysabeau', sans-serif;
+    overflow: auto;
+    background-size: 100%;
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2022/10/MSC21008703.jpg?quality=90&strip=info&w=1280&h=720&crop=1);
+    }
+
+.cabeçalho{
+    color: #050a30;
+    background-color: #050A30;
+    border-bottom: 3px solid #050A30;
+    width: 110%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -8px;
+    margin-left: -7px;
+    overflow: auto;
+}
+#imghome{
+    margin-left: 60px;
+    margin-top: 4px;
+    width: 99px;
+    height: 99px;
+}
+
+#imgajudaa{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 120px;
+}
+#img{
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  margin-left: 120px;
+}
+
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 490px;
+  border-radius: 10px 20px;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+#imgcarrinho{
+  margin-left: 850px;
+  margin-top: 17px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+#imgbarrinhas{
+    margin-left: 1050px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+#imgvazio{
+    margin-left: 575px;
+    margin-top: 85px;
+    width: 330px;
+    height: 330px;
+    position: absolute;
+}
+.promocoes{
+    background-color: #ffffff99;
+    width: 380px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 550px;
+    border-radius: 25px;
+    z-index: 2;
+}
+#imgadd{
+    margin-left: 710px;
+    margin-top: -215px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}

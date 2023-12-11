@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body,html{
+    height: 100%; 
+    overflow: hidden;
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/14179421596_b95c10db10_o.jpeg?quality=90&strip=info&w=1280&h=720&crop=1);
+    background-size: cover;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .l-form{
+    background-color:rgba(255, 255, 255, 0.54);
+    border-radius:12px;
+    padding: 12px;
+    width: 400px;
+    height: 300px;
+    margin-left: 550px;
+    margin-top: 147px;
+  }
+  
+  .i-form1{
+    border-radius:12px;
+    padding: 12px;
+    margin-top: -5px;
+    margin-left: 36px;
+    width: 300px;
+  }
+  .imgperfil{
+    width: 70px;
+    height: 70px;
+    margin-left: 165px;
+  }
+  .email{
+    margin-top: -10px;
+margin-left: 125px;
+  }
+  
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+.password{
+    border-radius:12px;
+    padding: 12px;
+    margin-top: -5px;
+    margin-left: 36px;
+    width: 300px;
+}
+.imgolho{
+    width: 30px;
+    height: 30px;
+    margin-left: 317px;
+    margin-top: 2px;
+    position: absolute;
+  }
+.img1{
+    width: 60px;
+    height: 60px;
+    margin-left: 13px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  .img2{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 120px;
+    position: absolute;
+  }
+  .imglogin{
+    width: 60px;
+    height: 60px;
+    margin-left: 145px;
+    margin-top: -10px;
+    position: absolute;
+  }
+  
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.videomostrar{
+  margin-left: 160px;
+  margin-top: 40px;
+  position: absolute;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+#videoElement{
+  border-radius: 100%;
+
+}
+.textoagencia{
+  margin-top: -30px;
+  margin-left: 1px;
+  position: absolute;
+}

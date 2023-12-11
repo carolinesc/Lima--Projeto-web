@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body,html{
+    height: 3500px;
+    background-color: white;
+    background-size: cover;
+    font-family: 'Space Grotesk', sans-serif;
+    background-size: 2000px;
+  }
+  .box-zoom-in {
+    overflow:hidden; 
+    width:100%; 
+    height:auto; 
+    margin-bottom:10px; 
+    float:left; 
+    border-radius:6px; 
+    border:4px #242424 solid;
+    transition-duration:200ms;
+  }
+  .box-zoom-in:hover { 
+    border:4px #ffffff solid; 
+    transition-duration:200ms; }
+    .geeks {
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+     
+  .geeks img {
+      width: 10%;
+      transition: 0.5s all ease-in-out;
+  }
+     
+  .geeks:hover img {
+      transform: scale(1.1);
+  }
+
+#imgfundopacotes4{
+    margin-left: -30px;
+    margin-top: -8px;
+
+    position: absolute;
+}
+.imghome{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute; 
+   }
+  .imgi{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 100px;
+    position: absolute;
+  }
+  .imgcar{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 180px;
+    position: absolute;
+  }
+  #imgilhasup1{
+    margin-left: -640px;
+    margin-top: 600px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgdisneyup2{
+    margin-left: -170px;
+    margin-top: 600px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgsinup3{
+    margin-left: -640px;
+    margin-top: 1000px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgchileup4{
+    margin-left: 300px;
+    margin-top: 600px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgantarticaup5{
+    margin-left: 300px;
+    margin-top: 1000px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgdisneyup6{
+    margin-left: -170px;
+    margin-top: 1000px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+.texto1{
+    color: #ffffff;
+    font-size: 250%;
+    margin-left: 1050px;
+    margin-top: 100px;
+    position: absolute;
+    font-family: 'Hind Siliguri', sans-serif;
+   }
+
+   .texto2{
+    color: #1c2355;
+    font-size: 150%;
+    margin-left: 115px;
+    margin-top: 470px;
+    position: absolute;
+    font-family: 'Hind Siliguri', sans-serif;
+   }
+
+   .texto3{
+    color: #1c2355;
+    font-size: 150%;
+    margin-left: 115px;
+    margin-top: 1400px;
+    position: absolute;
+    font-family: 'Hind Siliguri', sans-serif;
+   }
+
+   .texto4{
+    color: #1c2355;
+    font-size: 150%;
+    margin-left: 115px;
+    margin-top: 2400px;
+    position: absolute;
+    font-family: 'Hind Siliguri', sans-serif;
+   }
+   #imgbahamas1{
+    margin-left: -640px;
+    margin-top: 1550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgcaribe2{
+    margin-left: -170px;
+    margin-top: 1550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgegeu3{
+    margin-left: 300px;
+    margin-top: 1550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgitalia4{
+    margin-left: 300px;
+    margin-top: 1950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgmexico5{
+    margin-left: -170px;
+    margin-top: 1950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgportorico6{
+    margin-left: -640px;
+    margin-top: 1950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgbuzios1{
+    margin-left: -640px;
+    margin-top: 2550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgcamburiu2{
+    margin-left: -170px;
+    margin-top: 2550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgportobelo3{
+    margin-left: 300px;
+    margin-top: 2550px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgsalvador4{
+    margin-left: -640px;
+    margin-top: 2950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgbela5{
+    margin-left: -170px;
+    margin-top: 2950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}
+#imgilheus6{
+    margin-left: 300px;
+    margin-top: 2950px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 23px;
+    position: absolute;
+}

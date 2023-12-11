@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body,html{
+    height: 100%; 
+    overflow: hidden;
+    background-image: url(https://img.freepik.com/fotos-gratis/navio-atracado-no-porto-de-monaco_1268-14849.jpg?w=996&t=st=1686746684~exp=1686747284~hmac=07c80f6c411440c7301541ae284dc4c3c7279154c5d0c2390f94f4c95f85ce8a);
+    background-size: cover;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .imghome{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute; 
+   }
+   .imguser{
+    width: 60px;
+    height: 60px;
+    margin-left: 17px;
+    margin-top: 100px;
+    position: absolute; 
+   }
+  .imgbloco{
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 420px;
+  }
+  .imgobg{
+    margin-top: 130px;
+    position: absolute;
+    margin-left: 464px;
+  }
+  .imgsair{
+    width: 60px;
+    height: 60px;
+    margin-left: 729px;
+    margin-top: 320px;
+    position: absolute; 
+   }
+ 
